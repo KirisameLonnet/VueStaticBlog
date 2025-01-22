@@ -1,0 +1,141 @@
+.markdown-content {
+  color: #333333; /* 文字颜色 */
+  padding: 16px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0); /* 背景色 */
+}
+
+.markdown-content h1, .markdown-content h2, .markdown-content h3,
+.markdown-content h4, .markdown-content h5, .markdown-content h6 {
+  color: #333333; /* 标题颜色 */
+  border-bottom: 1px solid #101010;
+  padding-bottom: 0.3em;
+}
+
+.markdown-content a {
+  color: #b66ff4; /* 链接颜色 */
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid #9999CC;
+  padding-left: 16px;
+  color: #6a737d;
+  background-color: #FFFFCC;
+}
+
+.markdown-content code {
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.markdown-content pre {
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+.markdown-content th, .markdown-content td {
+  border: 1px solid #EEEEEE;
+  padding: 8px;
+}
+
+.markdown-content th {
+  background-color: #EEEEEE;
+  color: #333333;
+}
+
+.markdown-content tr:nth-child(2n) {
+  background-color: #EEEEEE;
+}
+
+.markdown-content hr {
+  border: 0;
+  height: 1px;
+  background: #EEEEEE;
+  margin: 24px 0;
+}
+
+.markdown-content ul, .markdown-content ol {
+  padding-left: 2em;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5em;
+}
+
+.markdown-content.light-theme {
+  color: #333333; /* 文字颜色 */
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #FFFFFF; /* 背景色设置为白色 */
+}
+
+.markdown-content.light-theme h1, .markdown-content.light-theme h2, .markdown-content.light-theme h3,
+.markdown-content.light-theme h4, .markdown-content.light-theme h5, .markdown-content.light-theme h6 {
+  color: #333333; /* 标题颜色 */
+  border-bottom: 1px solid #101010;
+  padding-bottom: 0.3em;
+}
+
+.markdown-content.light-theme a {
+  color: #b66ff4; /* 链接颜色 */
+}
+
+.markdown-content.light-theme blockquote {
+  border-left: 4px solid #9999CC;
+  padding-left: 16px;
+  color: #6a737d;
+  background-color: #FFFFCC;
+}
+
+.markdown-content.light-theme code {
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.markdown-content.light-theme pre {
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.markdown-content.light-theme table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+.markdown-content.light-theme th, .markdown-content.light-theme td {
+  border: 1px solid #EEEEEE;
+  padding: 8px;
+}
+
+.markdown-content.light-theme th {
+  background-color: #FFFFFF; /* 背景色设置为白色 */
+  color: #333333;
+}
+
+.markdown-content.light-theme tr:nth-child(2n) {
+  background-color: #FFFFFF; /* 背景色设置为白色 */
+}
+
+.markdown-content.light-theme hr {
+  border: 0;
+  height: 1px;
+  background: #EEEEEE;
+  margin: 24px 0;
+}
