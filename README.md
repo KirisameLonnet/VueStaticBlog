@@ -24,7 +24,7 @@ npm run updateindex
 ```
 npm run build
 ```
-> I have not builts it yet
+> I have not built it yet
 
 ### Lints and fixes files
 ```
