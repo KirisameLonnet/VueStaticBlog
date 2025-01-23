@@ -34,6 +34,7 @@ export default {
     }
   },
   mounted() {
+    this.updateThemeClass(this.$vuetify.theme.dark);
     fetch(this.post)
       .then(response => response.text())
       .then(text => {
@@ -42,7 +43,6 @@ export default {
       .catch(error => {
         console.error('读取文件失败:', error);
       });
-    this.updateThemeClass(this.$vuetify.theme.dark);
   },
   methods: {
     updateThemeClass(isDark) {

@@ -14,7 +14,7 @@ export default {
   },
   data() {
     return {
-      aboutContent: '/md/about.md'
+      aboutContent: '/Blog/about.md'
     };
   }
 }

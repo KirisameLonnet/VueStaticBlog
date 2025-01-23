@@ -2,6 +2,9 @@
 node_modules
 /dist
 
+/public/Blog/post/*
+!/public/Blog/post/.gitkeep
+
 
 # local env files
 .env.local

@@ -45,14 +45,14 @@ export default {
     methods: {
         async fetchPosts() {
             try {
-                const response = await axios.get('/md/BlogPosts/post_index.json');
+                const response = await axios.get('/Blog/post_index.json');
                 this.posts = response.data;
             } catch (error) {
                 console.error('Error fetching posts:', error);
             }
         },
         goToPost(file) {
-            this.$router.push({ path: `/post/${file}` });
+            this.$router.push({ name: 'PostReader', params: { file: file } });
         }
     }
 };
