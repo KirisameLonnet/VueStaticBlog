@@ -1,7 +1,7 @@
 <template>
   <v-container class="d-flex justify-center align-center fill-height">
     <v-card :class="cardClass" max-width="90%" outlined>
-      <v-img src="https://img.paulzzh.com/touhou/random" height="400px"></v-img>
+      <v-img src="https://img.paulzzh.com/touhou/random" height="750px"></v-img>
       <v-card-title class="headline">KirisameLonnet's Blog</v-card-title>
       <v-card-subtitle>Hi there</v-card-subtitle>
       <v-col style="margin-top: 1%; display: flex; justify-content: center;">
@@ -14,21 +14,33 @@
             <v-icon left>mdi-book-open</v-icon>
             Blog Posts
           </v-btn>
-          <v-btn class="rounded-btn" color="primary" @click="goToAbout" style="margin: 10px;">
+          
+          <!-- <v-btn class="rounded-btn" color="primary" @click="toogleLinksCard" style="margin: 10px;">
             <v-icon left>mdi-link</v-icon>
             Links
-          </v-btn>
+          </v-btn> -->
+
         </v-row>
       </v-col>
+    </v-card>
+    <v-card :class="cardClass" max-width="90%" outlined v-show="showLinksCard">
+      <LinkCard/>
     </v-card>
   </v-container>
 </template>
 
 <script>
+import LinkCard from '@/components/LinkCard.vue';
+
 export default {
+  components: {
+    LinkCard
+  },
   name: 'HomePage',
   data() {
+
     return {
+      showLinksCard: false,
       cardClass: 'elevation-12'
     };
   },
@@ -41,7 +53,10 @@ export default {
     },
     goToIndex() {
       this.$router.push({ path: '/index' });
-    }
+    },
+    toggleLinksCard() {
+      this.showLinksCard = !this.showLinksCard;
+    },
   }
 };
 </script>
