@@ -7,6 +7,7 @@
 <script>
 import { marked } from 'marked';
 
+
 export default {
   name: 'MarkdownRender',
   props: {
@@ -17,24 +18,21 @@ export default {
   },
   data() {
     return {
-      markdown: ""
+      markdown: "",
+      themeClass: this.$vuetify.theme.dark ? 'dark-theme' : 'light-theme', // 初始值
     };
   },
   computed: {
-    themeClass() {
-      return this.$vuetify.theme.dark ? 'dark-theme' : 'light-theme';
-    },
     markdownToHtml() {
       return marked(this.markdown);
     }
   },
   watch: {
     '$vuetify.theme.dark': function(newVal) {
-      this.updateThemeClass(newVal);
+      this.themeClass = newVal ? 'dark-theme' : 'light-theme';
     }
   },
   mounted() {
-    this.updateThemeClass(this.$vuetify.theme.dark);
     fetch(this.post)
       .then(response => response.text())
       .then(text => {
@@ -43,24 +41,12 @@ export default {
       .catch(error => {
         console.error('读取文件失败:', error);
       });
-  },
-  methods: {
-    updateThemeClass(isDark) {
-      this.themeClass = isDark ? 'dark-theme' : 'light-theme';
-    }
   }
-}
+};
 </script>
 
 <style scoped>
-@import '@/components/markdown.css';
-@import '@/components/markdown-dark.css';
 
-.light-theme {
-  /* 适用于浅色模式的样式 */
-}
+@import 'markdown.css';
 
-.dark-theme {
-  /* 适用于深色模式的样式 */
-}
 </style>

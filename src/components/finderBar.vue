@@ -6,7 +6,7 @@
         <v-list class="d-flex justify-left flex-column" style="margin-left: 20px; margin-top: 50px; text-align: left; font-size: 25px;">
             <v-list-item>
             <v-list-item-content>
-                <v-list-item-title>Finder</v-list-item-title>
+                <v-list-item-title>没想好侧边栏写什么</v-list-item-title>
             </v-list-item-content>
             </v-list-item>
         </v-list>

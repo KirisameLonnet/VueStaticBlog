@@ -8,10 +8,10 @@ import PostReader from './pages/PostReader.vue';
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', component: HomePage },
-  { path: '/about', component: AboutPage },
-  { path: '/index', component: IndexPage },
-  { path: '/post/:file', name: 'PostReader', component: PostReader, props: true }
+  { path: '/', component: HomePage, meta: { title: 'Home' } },
+  { path: '/about', component: AboutPage, meta: { title: 'AboutMe' } },
+  { path: '/index', component: IndexPage, meta: { title: 'Index' } },
+  { path: '/post/:file', name: 'PostReader', component: PostReader, props: true}
 ];
 
 const router = new VueRouter({

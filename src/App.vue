@@ -45,6 +45,9 @@ export default {
   created() {
     this.listen();
   },
+  mounted() {
+    document.title = 'Lonnet\'s Blog';
+  },
   methods: {
     listen() {
       const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
